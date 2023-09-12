@@ -7,20 +7,26 @@
 **Main Menu**:
 - The program enters a loop where you are presented with a menu of options.
 - You can choose from the following options:
+  
 **Option 1: Check if an Integer Exists:**
 - If you choose option 1, you will be prompted to enter an integer (target) to check if it exists in the array.
 - The program will then search for the integer in the array using the findInteger function and display whether it was found and its index if found.
+  
 **Option 2: Modify an Integer:**
 - If you choose option 2, you will be prompted to enter the index (modifyIndex) of the integer you want to modify and the new value (newValue) you want to set.
 - The program will use the modifyInteger function to change the value at the specified index and display the old and new values.
+  
 **Option 3: Add an Integer:**
 - If you choose option 3, you will be prompted to enter a new integer (newInt) to add to the end of the array.
 - The program will use the addInteger function to append the new integer to the array.
+  
 **Option 4: Replace with 0 or Delete:**
 - If you choose option 4, you will be asked if you want to replace an integer in the array with 0 (r to replace) or delete an integer (d to delete) altogether.
 - Depending on your choice, it will either use the replaceOrRemoveAtIndex function to set the value at a specified index to 0 or simply remove the value.
+  
 **Option 5: Quit:**
 - If you choose option 5, the program will exit the loop and terminate.
+  
 **Error Handling:**
 - The code includes error handling using try-catch blocks. If any issues occur during file reading, array manipulation, or input validation, error messages will be displayed.
 

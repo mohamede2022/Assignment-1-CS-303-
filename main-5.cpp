@@ -1,4 +1,7 @@
 #include "func.h"
+//Mohamed Elgasim
+//Assignment 1
+//09/11/2023
 
 int main() {
     int dataArray[MAX_ROWS][MAX_COLS];
@@ -6,11 +9,12 @@ int main() {
 
     std::string filename = "data.txt";
     int choice = 1;
-
+    //Keeps looping until the choice is 5 
     while (choice != 5) {
+        // reads in the data from the Array in the file 
         try {
             readDataFromFile(dataArray, numRows);
-
+            //Main menu to choose operations to perform
             std::cout << "What would you like to do to the Array?\n"
                       << "1. Check if a certain integer exists\n"
                       << "2. Modify an integer in the array\n"
@@ -18,7 +22,7 @@ int main() {
                       << "4. Replace the old value with 0\n"
                       << "5. Quit\n\n";
             std::cin >> choice;
-
+            // choice 1 checks if a certain integer exists
             if (choice == 1) {
                 try {
                     int target;
@@ -31,7 +35,7 @@ int main() {
                     std::cerr << e.what() << std::endl;
                 }
             }
-
+            // choice 2 modifies an integer in the array
             if (choice == 2) {
                 int modifyIndex;
                 int newValue;
@@ -47,7 +51,7 @@ int main() {
                     std::cerr << e.what() << std::endl;
                 }
             }
-
+            // choice 3 adds a new integer to the end of the array
             if (choice == 3) {
                 int newInt;
                 try {
@@ -59,7 +63,7 @@ int main() {
                     std::cerr << e.what() << std::endl;
                 }
             }
-
+            // choice 4 replaces the old value with 0
             if (choice == 4) {
                 int modifyIndex;
                 std::cout << "At what index is the number you want to change to 0?\n";

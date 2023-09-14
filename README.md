@@ -2,8 +2,8 @@
 
 **Initialization:**
 - The code starts by declaring a 2D array dataArray to store integers, and it initializes numRows to 0.
-- It also sets a default filename as "data.txt" for reading data from a file.
-- choice is initialized to 1 to enter the main menu loop.
+- Default filename is set as "data.txt" for reading data from a file.
+- choice is initialized to 1 to enter the main menu while loop.
 **Main Menu**:
 - The program enters a loop where you are presented with a menu of options.
 - You can choose from the following options:
